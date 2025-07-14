@@ -1,0 +1,42 @@
+{
+  "name": "@lewinnovation/amplify-pull-helper",
+  "version": "1.0.0",
+  "description": "Helper CLI to find the Amplify App ID for a repo and pull the amplify_outputs.json file",
+  "main": "index.ts",
+  "bin": {
+    "amplify-pull-helper": "dist/index.js"
+  },
+  "scripts": {
+    "prepublishOnly": "pnpm run build",
+    "build": "tsc"
+  },
+  "keywords": [
+    "amplify",
+    "cli"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewinnovation/amplify-pull-helper.git"
+  },
+  "author": "Vidur Butalia <vidurbutalia@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewinnovation/amplify-pull-helper/issues"
+  },
+  "homepage": "https://github.com/lewinnovation/amplify-pull-helper#readme",
+  "devDependencies": {
+    "@aws-sdk/client-account": "^3.844.0",
+    "@aws-sdk/client-amplify": "^3.844.0",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^22.16.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.6.0",
+    "yoctocolors": "^2.1.1",
+    "zx": "^8.7.1"
+  },
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
+}
