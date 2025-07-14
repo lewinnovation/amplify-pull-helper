@@ -92,4 +92,6 @@ console.log(
   `Generating outputs for ${colors.bold(selectedAmplifyBranch.branchName)} branch of ${colors.bold(selectedAmplifyApp.name ?? "")} app in ${colors.bold(selectedAwsRegion)} region using ${colors.bold(selectedAwsProfile)} profile.`,
 );
 
-await $`pnpm exec ampx --profile ${selectedAwsProfile} --region ${selectedAwsRegion} generate outputs --app-id ${selectedAmplifyApp.appId} --branch ${selectedAmplifyBranch.branchName}`;
+process.env.AWS_REGION = selectedAwsRegion;
+
+await $`pnpm exec ampx generate outputs --profile ${selectedAwsProfile} --app-id ${selectedAmplifyApp.appId} --branch ${selectedAmplifyBranch.branchName} --format json`;

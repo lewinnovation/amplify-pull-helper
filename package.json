@@ -29,7 +29,7 @@
     "@aws-sdk/client-account": "^3.844.0",
     "@aws-sdk/client-amplify": "^3.844.0",
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.16.3",
+    "@types/node": "22",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },
