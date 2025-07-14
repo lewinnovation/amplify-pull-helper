@@ -1,6 +1,6 @@
 {
   "name": "@lewinnovation/amplify-pull-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper CLI to find the Amplify App ID for a repo and pull the amplify_outputs.json file",
   "main": "index.ts",
   "bin": {
